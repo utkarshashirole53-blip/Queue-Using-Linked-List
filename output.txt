@@ -1,0 +1,50 @@
+==== Hospital Patient Waiting Queue =====
+1. Enqueue Patient
+2. Dequeue Patient
+3. Display Queue
+4. Exit
+Enter your choice: 1
+Enter Patient ID: 249
+Enter Patient Name: Utkarsha Dashrath Shirole 
+Patient added successfully.
+
+===== Hospital Patient Waiting Queue =====
+1. Enqueue Patient
+2. Dequeue Patient
+3. Display Queue
+4. Exit
+Enter your choice: Enter Patient ID: Enter Patient Name: Patient added successfully.
+
+===== Hospital Patient Waiting Queue =====
+1. Enqueue Patient
+2. Dequeue Patient
+3. Display Queue
+4. Exit
+Enter your choice: Enter Patient ID: Enter Patient Name: Patient added successfully.
+
+===== Hospital Patient Waiting Queue =====
+1. Enqueue Patient
+2. Dequeue Patient
+3. Display Queue
+4. Exit
+Enter your choice: 2
+Patient removed: 249 - Utkarsha
+
+===== Hospital Patient Waiting Queue =====
+1. Enqueue Patient
+2. Dequeue Patient
+3. Display Queue
+4. Exit
+Enter your choice: 3
+
+Hospital Patient Waiting Queue:
+Patient ID: 0, Name: Dashrath
+Patient ID: 0, Name: Shirole
+
+===== Hospital Patient Waiting Queue =====
+1. Enqueue Patient
+2. Dequeue Patient
+3. Display Queue
+4. Exit
+Enter your choice: 4
+Program ended.
