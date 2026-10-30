@@ -1,0 +1,87 @@
+#include <iostream>
+#include <climits>
+using namespace std;
+
+#define V 5
+
+void primMST(int graph[V][V])
+{
+    int parent[V];
+    int key[V];
+    bool visited[V] = {false};
+
+    for (int i = 0; i < V; i++)
+        key[i] = INT_MAX;
+
+    key[0] = 0;
+    parent[0] = -1;
+
+    for (int count = 0; count < V - 1; count++)
+    {
+        int min = INT_MAX;
+        int u = -1;
+
+        for (int v = 0; v < V; v++)
+        {
+            if (!visited[v] && key[v] < min)
+            {
+                min = key[v];
+                u = v;
+            }
+        }
+
+        if (u == -1)
+        {
+            cout << "Network is disconnected!\n";
+            return;
+        }
+
+        visited[u] = true;
+
+        for (int v = 0; v < V; v++)
+        {
+            if (graph[u][v] != 0 &&
+                !visited[v] &&
+                graph[u][v] < key[v])
+            {
+                parent[v] = u;
+                key[v] = graph[u][v];
+            }
+        }
+    }
+
+    int totalCost = 0;
+
+    cout << "\nMinimum Cost Communication Network\n";
+    cout << "Connection\tInstallation Cost\n";
+
+    for (int i = 1; i < V; i++)
+    {
+        cout << "Block " << parent[i] + 1
+             << " - Block " << i + 1
+             << "\tRs. " << graph[i][parent[i]] << endl;
+
+        totalCost += graph[i][parent[i]];
+    }
+
+    cout << "\nMinimum Total Installation Cost: Rs. "
+         << totalCost << endl;
+}
+
+int main()
+{
+    int graph[V][V] = {
+        {0, 10, 0, 30, 0},
+        {10, 0, 20, 0, 50},
+        {0, 20, 0, 40, 10},
+        {30, 0, 40, 0, 20},
+        {0, 50, 10, 20, 0}
+    };
+
+    cout << "Hospital Communication Network\n";
+    cout << "Blocks: ICU, Lab, Emergency, Admin, Pharmacy\n";
+
+    primMST(graph);
+
+    return 0;
+}
