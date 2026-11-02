@@ -1,0 +1,63 @@
+1. Title
+
+Minimum Cost Hospital Fiber Optic Network Using Prim's Algorithm
+
+2. Introduction
+
+A hospital has different departments such as Emergency, ICU, Laboratory, Pharmacy and Administration. These departments need a fast communication network. Fiber optic cables are used to connect these departments. Prim's Algorithm helps to connect all departments with minimum installation cost.
+
+3. Problem Statement
+
+To represent hospital blocks and possible fiber optic connections with installation costs, and apply Prim's Algorithm to determine the minimum-cost communication network.
+
+4. Objectives
+
+To understand the concept of Minimum Spanning Tree.
+To connect all hospital departments.
+To minimize fiber optic cable installation costs.
+To implement Prim's Algorithm using C++.
+To design an efficient communication network.
+
+5. Algorithm
+
+1.Start the program.
+2.Create a weighted graph of hospital departments.
+3.Select the starting vertex.
+4.Find the minimum-cost edge.
+5.Add the selected edge to the MST.
+6.Repeat until all vertices are connected.
+7.Calculate the total minimum cost.
+8.Display the result.
+9.Stop the program.
+
+
+6. Advantages
+
+Reduces installation costs.
+Provides fast communication.
+Avoids unnecessary cable connections.
+Connects all hospital departments.
+Saves time and resources.
+
+7. Applications
+
+Hospital communication systems.
+ICU monitoring systems.
+Laboratory data transfer.
+Digital medical records.
+Emergency communication.
+
+8. Future Scope
+
+Smart hospital networks.
+IoT-based healthcare systems.
+Improved data security.
+Connecting new hospital buildings.
+High-speed medical data transfer.
+
+
+9. Conclusion
+
+Prim's Algorithm helps to design a minimum-cost fiber optic network for hospitals. It connects all departments without unnecessary connections and reduces installation costs. It provides an efficient and reliable communication network.
+
+
